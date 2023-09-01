@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+				
+	<definition name="bootstrap" 	   template="/WEB-INF/views/tiles/bootstrapPractice/layout/layout.jsp">		
+ 		<put-attribute name="header" value="/WEB-INF/views/tiles/bootstrapPractice/layout/header.jsp"/>	
+ 		<put-attribute name="footer" value="/WEB-INF/views/tiles/bootstrapPractice/layout/footer.jsp"/>	
+ 	</definition>
+ 	
+ 	<definition name="/bootstrap/index"  extends="bootstrap">	
+ 		<put-attribute name="content" value="/WEB-INF/views/tiles/bootstrapPractice/contents/index.jsp"/>	
+ 		<put-attribute name="title" value="index"></put-attribute>
+ 	</definition>
+
+ 	<definition name="/bootstrap/blog"  extends="bootstrap">	
+ 		<put-attribute name="content" value="/WEB-INF/views/tiles/bootstrapPractice/contents/blog.jsp"/>
+ 		<put-attribute name="title" value="blog"></put-attribute>	
+ 	</definition>
+ 	
+ 	<definition name="/bootstrap/checkout"  extends="bootstrap">	
+ 		<put-attribute name="content" value="/WEB-INF/views/tiles/bootstrapPractice/contents/checkout.jsp"/>
+ 		<put-attribute name="title" value="checkout"></put-attribute>	
+ 	</definition>
+	 	
+ 	
+ 	<definition name="/bootstrap/shop"  extends="bootstrap">	
+ 		<put-attribute name="content" value="/WEB-INF/views/tiles/bootstrapPractice/contents/shop.jsp"/>
+ 		<put-attribute name="title" value="shop"></put-attribute>	
+ 	</definition>
+	 	
+</tiles-definitions>
